@@ -1,22 +1,22 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const contactSchema = mongoose.Schema(
     {
-        name : {
+        name: {
             type: String,
-            required: [true, "Please add the contact name"]
+            required: [true, "Please add the contact name"],
         },
-        email : {
+        email: {
             type: String,
-            required: [true, "Please add the contact email address"]
+            required: [true, "Please add the contact email address"],
         },
-        phone : {
+        phone: {
             type: String,
-            required: [true, "Please add the contact phone number"]
-        }
+            required: [true, "Please add the contact phone number"],
+        },
     },
     {
-        timestamps: true
+        timestamps: true,
     }
 );
 
